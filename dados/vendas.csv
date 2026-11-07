@@ -1,0 +1,49 @@
+﻿ID_Venda;ID_Produto;Vendedor;Distrito;Quantidade
+V001;P001;Jorge Oliveira;Lisboa;15
+V002;P002;Jorge Oliveira;Lisboa;92
+V003;P003;Jorge Oliveira;Leiria;2
+V004;P003;Jorge Oliveira;Lisboa;5
+V005;P001;Catarina Bastos;Porto;61
+V006;P004;Afonso Melo;Faro;198
+V007;P002;Afonso Melo;Açores;36
+V008;P002;Afonso Melo;Madeira;95
+V009;P005;Afonso Melo;Açores;21
+V010;P003;Catarina Bastos;Porto;6
+V011;P003;Andreia Lima;Viana do Castelo;1
+V012;P002;Andreia Lima;Vila Real;65
+V013;P002;Catarina Bastos;Braga;71
+V014;P005;Andreia Lima;Vila Real;102
+V015;P006;Catarina Bastos;Porto;255
+V016;P004;Pedro Pontes;Lisboa;391
+V017;P003;Andreia Lima;Vila Real;9
+V018;P007;Catarina Bastos;Porto;2
+V019;P006;Paulo Ferreira;Viana do Castelo;2
+V020;P005;Pedro Pontes;Lisboa;33
+V021;P003;Afonso Melo;Açores;10
+V022;P003;Catarina Bastos;Braga;11
+V023;P008;Paulo Ferreira;Vila Real;632
+V024;P008;Catarina Bastos;Porto;520
+V025;P006;Catarina Bastos;Braga;65
+V026;P003;Afonso Melo;Madeira;22
+V027;P004;Paulo Ferreira;Viana do Castelo;323
+V028;P008;Andreia Lima;Viana do Castelo;261
+V029;P008;Pedro Pontes;Lisboa;203
+V030;P004;Catarina Bastos;Porto;162
+V031;P005;Catarina Bastos;Porto;50
+V032;P006;Pedro Pontes;Lisboa;80
+V033;P004;Pedro Pontes;Leiria;24
+V034;P002;Catarina Bastos;Porto;9
+V035;P001;Pedro Pontes;Leiria;10
+V036;P001;Catarina Bastos;Braga;95
+V037;P009;Pedro Pontes;Lisboa;2
+V038;P001;Afonso Melo;Faro;5
+V039;P004;Afonso Melo;Açores;53
+V040;P010;Catarina Bastos;Porto;1029
+V041;P010;Pedro Pontes;Lisboa;895
+V042;P008;Afonso Melo;Açores;91
+V043;P002;Andreia Lima;Viana do Castelo;13
+V044;P009;Catarina Bastos;Porto;94
+V045;P005;Afonso Melo;Faro;60
+V046;P001;Paulo Ferreira;Vila Real;2
+V047;P006;Catarina Bastos;Porto;95
+V048;P001;Afonso Melo;Madeira;6

@@ -1,0 +1,11 @@
+﻿ID_Produto;Nome;Tipo;Pais_Origem;Preco_Unitario;Margem
+P001;Société;Roquefort;França;10,9;2,9
+P002;Président;Brie;França;5,5;1,45
+P003;Beemster;Gouda;Holanda;54,9;19,9
+P004;Kerrygold;Cheddar;Reino Unido;2,5;0,5
+P005;Emmentaler;Emmental;Suiça;6,6;2,6
+P006;Quintas de Seia;Serra;Portugal;19,9;5,45
+P007;Président;Roquefort;França;9,6;3,55
+P008;Galbani;Mozzarella;Itália;1,8;0,6
+P009;Queijos da Serra;Serra;Portugal;29,5;8,5
+P010;English Cheddar;Cheddar;Reino Unido;0,99;0,15

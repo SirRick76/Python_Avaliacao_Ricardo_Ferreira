@@ -22,4 +22,4 @@ analise.produto_mais_vendido_tipo()
 analise.vendedor_maior_faturacao()
 
 criar_ficheiro_relatorio()
-escrever_ficheiro_relatorio(dados)
+escrever_ficheiro_relatorio(dados,analise)

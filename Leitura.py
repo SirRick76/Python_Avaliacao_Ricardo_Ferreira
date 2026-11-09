@@ -74,6 +74,6 @@ def juntar_dados(produtos,vendas):
         registo["preco"] = produto["preco"]
         registo["margem"] = produto["margem"]
         dados.append(registo)
-    print (dados)
+    return (dados)
 
 

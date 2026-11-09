@@ -1,0 +1,51 @@
+Última atualização: 2026-11-09 10:54:37
+Análise Venda de Produtos
+Id_Venda |  Id_Produto | Vendedor |            Distrito |          Nome Produto |      Tipo |         Pais Origem |  Quantidade | Preco Unitario |  Margem |  
+V001        P001         Jorge Oliveira        Lisboa              Société             Roquefort      França         15           10.9              2.9       
+V002        P002         Jorge Oliveira        Lisboa              Président           Brie           França         92           5.5               1.45      
+V003        P003         Jorge Oliveira        Leiria              Beemster            Gouda          Holanda        2            54.9              19.9      
+V004        P003         Jorge Oliveira        Lisboa              Beemster            Gouda          Holanda        5            54.9              19.9      
+V005        P001         Catarina Bastos       Porto               Société             Roquefort      França         61           10.9              2.9       
+V006        P004         Afonso Melo           Faro                Kerrygold           Cheddar        Reino Unido    198          2.5               0.5       
+V007        P002         Afonso Melo           Açores              Président           Brie           França         36           5.5               1.45      
+V008        P002         Afonso Melo           Madeira             Président           Brie           França         95           5.5               1.45      
+V009        P005         Afonso Melo           Açores              Emmentaler          Emmental       Suiça          21           6.6               2.6       
+V010        P003         Catarina Bastos       Porto               Beemster            Gouda          Holanda        6            54.9              19.9      
+V011        P003         Andreia Lima          Viana do Castelo    Beemster            Gouda          Holanda        1            54.9              19.9      
+V012        P002         Andreia Lima          Vila Real           Président           Brie           França         65           5.5               1.45      
+V013        P002         Catarina Bastos       Braga               Président           Brie           França         71           5.5               1.45      
+V014        P005         Andreia Lima          Vila Real           Emmentaler          Emmental       Suiça          102          6.6               2.6       
+V015        P006         Catarina Bastos       Porto               Quintas de Seia     Serra          Portugal       255          19.9              5.45      
+V016        P004         Pedro Pontes          Lisboa              Kerrygold           Cheddar        Reino Unido    391          2.5               0.5       
+V017        P003         Andreia Lima          Vila Real           Beemster            Gouda          Holanda        9            54.9              19.9      
+V018        P007         Catarina Bastos       Porto               Président           Roquefort      França         2            9.6               3.55      
+V019        P006         Paulo Ferreira        Viana do Castelo    Quintas de Seia     Serra          Portugal       2            19.9              5.45      
+V020        P005         Pedro Pontes          Lisboa              Emmentaler          Emmental       Suiça          33           6.6               2.6       
+V021        P003         Afonso Melo           Açores              Beemster            Gouda          Holanda        10           54.9              19.9      
+V022        P003         Catarina Bastos       Braga               Beemster            Gouda          Holanda        11           54.9              19.9      
+V023        P008         Paulo Ferreira        Vila Real           Galbani             Mozzarella     Itália         632          1.8               0.6       
+V024        P008         Catarina Bastos       Porto               Galbani             Mozzarella     Itália         520          1.8               0.6       
+V025        P006         Catarina Bastos       Braga               Quintas de Seia     Serra          Portugal       65           19.9              5.45      
+V026        P003         Afonso Melo           Madeira             Beemster            Gouda          Holanda        22           54.9              19.9      
+V027        P004         Paulo Ferreira        Viana do Castelo    Kerrygold           Cheddar        Reino Unido    323          2.5               0.5       
+V028        P008         Andreia Lima          Viana do Castelo    Galbani             Mozzarella     Itália         261          1.8               0.6       
+V029        P008         Pedro Pontes          Lisboa              Galbani             Mozzarella     Itália         203          1.8               0.6       
+V030        P004         Catarina Bastos       Porto               Kerrygold           Cheddar        Reino Unido    162          2.5               0.5       
+V031        P005         Catarina Bastos       Porto               Emmentaler          Emmental       Suiça          50           6.6               2.6       
+V032        P006         Pedro Pontes          Lisboa              Quintas de Seia     Serra          Portugal       80           19.9              5.45      
+V033        P004         Pedro Pontes          Leiria              Kerrygold           Cheddar        Reino Unido    24           2.5               0.5       
+V034        P002         Catarina Bastos       Porto               Président           Brie           França         9            5.5               1.45      
+V035        P001         Pedro Pontes          Leiria              Société             Roquefort      França         10           10.9              2.9       
+V036        P001         Catarina Bastos       Braga               Société             Roquefort      França         95           10.9              2.9       
+V037        P009         Pedro Pontes          Lisboa              Queijos da Serra    Serra          Portugal       2            29.5              8.5       
+V038        P001         Afonso Melo           Faro                Société             Roquefort      França         5            10.9              2.9       
+V039        P004         Afonso Melo           Açores              Kerrygold           Cheddar        Reino Unido    53           2.5               0.5       
+V040        P010         Catarina Bastos       Porto               English Cheddar     Cheddar        Reino Unido    1029         0.99              0.15      
+V041        P010         Pedro Pontes          Lisboa              English Cheddar     Cheddar        Reino Unido    895          0.99              0.15      
+V042        P008         Afonso Melo           Açores              Galbani             Mozzarella     Itália         91           1.8               0.6       
+V043        P002         Andreia Lima          Viana do Castelo    Président           Brie           França         13           5.5               1.45      
+V044        P009         Catarina Bastos       Porto               Queijos da Serra    Serra          Portugal       94           29.5              8.5       
+V045        P005         Afonso Melo           Faro                Emmentaler          Emmental       Suiça          60           6.6               2.6       
+V046        P001         Paulo Ferreira        Vila Real           Société             Roquefort      França         2            10.9              2.9       
+V047        P006         Catarina Bastos       Porto               Quintas de Seia     Serra          Portugal       95           19.9              5.45      
+V048        P001         Afonso Melo           Madeira             Société             Roquefort      França         6            10.9              2.9       

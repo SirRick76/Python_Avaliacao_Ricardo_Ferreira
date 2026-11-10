@@ -40,7 +40,7 @@ def escrever_ficheiro_relatorio(dados,analise):
         for nomes,qtd in analise.qtd_prod_vendidos_nome().items():
             ficheiro.write(f"{nomes:<20}{qtd:>6} unidades\n")
         ficheiro.write("\n")
-        ficheiro.write("Quantidade total de produtos vendidos por nome:\n")
+        ficheiro.write("Quantidade total de produtos vendidos por tipo:\n")
         for tipos,qtd in analise.qtd_prod_vendidos_tipo().items():
             ficheiro.write(f"{tipos:<20}{qtd:>6} unidades\n")
         ficheiro.write("\n")

@@ -4,15 +4,36 @@ from Calculos import *
 
 
 def criar_ficheiro_relatorio():
+    '''
+       Cria o ficheiro relatorio_vendas.txt vazio caso nao exista
+       Usa uma excepçao caso o ficheiro ja exista
+
+        Returns:
+            None
+    '''
     try:
         with open("relatorio_vendas.txt", "x", encoding="utf-8") as ficheiro:
             pass
     except FileExistsError:
         print("O ficheiro já existe!")
 def escrever_ficheiro_relatorio(dados,analise):
+    '''
+        Escreve o relatorio completo no ficheiro relatorio_vendas.txt.
+        O ficheiro esta dividido em 2 partes, a primeira com uma tabela com todos os dados de vendas e produtos unidos e 
+        na segunda tem todas as analises feita na classe VendasProd. O ficheiro escreve ou reescreve sempre que a função e chamada
+
+        Args:
+            dados(list): vendas ja associadas ao produto
+            analise(VendaProd): objeto que fornece todos os calculos
+
+        Returns:
+            None
+    '''
     data_atual = dt.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     with open("relatorio_vendas.txt", "w", encoding="utf-8") as ficheiro:
+        #data e hora da criaçao do relatorio
         ficheiro.write(f"Última atualização: {data_atual}\n")
+        #parte 1 cabeçalhos e uma linha por venda
         ficheiro.write("ANÁLISE DE VENDAS \n")
         ficheiro.write("1. DADOS DAS VENDAS \n")
         ficheiro.write(f"{"|Id_Venda ":<12}{"|Id_Produto":<13}{"|Vendedor ":<22}{"|Distrito ":<20}{"|Nome Produto ":<20}{"|Tipo ":<15}{"|Pais Origem ":<15}{"|Quantidade ":<13}{"|Preco Unitario ":<18}{"|Margem |":<10}\n")
@@ -31,10 +52,14 @@ def escrever_ficheiro_relatorio(dados,analise):
                 f"|{venda["margem"]:<7}|\n"
             )
             ficheiro.write("-" * 157 + "\n")
+        #parte 2 analises feitas pela classe VendaProd
         ficheiro.write("2. ANÁLISE DAS VENDAS \n")
         ficheiro.write("\n")
         ficheiro.write("Número de vendas:")
         ficheiro.write(f"{analise.calcular_vendas():}\n")
+        ficheiro.write("\n")
+        ficheiro.write("Quantidade total de vendas:")
+        ficheiro.write(f"{analise.qtd_total_produtos():}\n")
         ficheiro.write("\n")
         ficheiro.write("Quantidade total de produtos vendidos por nome:\n")
         for nomes,qtd in analise.qtd_prod_vendidos_nome().items():
@@ -48,7 +73,7 @@ def escrever_ficheiro_relatorio(dados,analise):
         ficheiro.write(f"{analise.total_faturacao():}€\n")
         ficheiro.write("\n")
         ficheiro.write("Lucro obtido:")
-        ficheiro.write(f"{analise.lucro_obtido():}€\n")
+        ficheiro.write(f"{analise.lucro_obtido():.2f}€\n")
         ficheiro.write("\n")
         ficheiro.write("Produto mais vendido por nome:\n")
         nome,qtd = analise.produto_mais_vendido_nome()

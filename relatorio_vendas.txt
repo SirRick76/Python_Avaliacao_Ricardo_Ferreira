@@ -1,4 +1,4 @@
-Última atualização: 2026-11-10 15:34:38
+Última atualização: 2026-11-10 16:18:20
 ANÁLISE DE VENDAS 
 1. DADOS DAS VENDAS 
 |Id_Venda   |Id_Produto  |Vendedor             |Distrito           |Nome Produto       |Tipo          |Pais Origem   |Quantidade  |Preco Unitario   |Margem | 
@@ -102,6 +102,8 @@ ANÁLISE DE VENDAS
 2. ANÁLISE DAS VENDAS 
 
 Número de vendas:48
+
+Quantidade total de vendas:6284
 
 Quantidade total de produtos vendidos por nome:
 Société                194 unidades

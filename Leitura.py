@@ -20,14 +20,14 @@ def ler_ficheiro_produtos():
 
 def ler_ficheiro_vendas():
     '''
-        Lê o ficheiro vendas.csv e mostra cada linha no terminal.
+    Lê o ficheiro vendas.csv e mostra cada linha no terminal.
     
-        Serve apenas para testar a leitura. Se o ficheiro não existir, mostra uma mensagem de erro em vez de parar o programa. 
+    Serve apenas para testar a leitura. Se o ficheiro não existir, mostra uma mensagem de erro em vez de parar o programa. 
     
-        Returns:
-            None:apenas imprime as linhas.
+    Returns:
+        None:apenas imprime as linhas.
     
-        '''
+    '''
     try:
         with open("dados/vendas.csv", "r", encoding="utf-8-sig",newline='') as ficheiro:
             conteudo = csv.reader(ficheiro,delimiter=";")

@@ -7,6 +7,8 @@ class VendaProd:
         print(self.dados)
     def calcular_vendas(self):
         return len(self.dados)
+    def qtd_total_produtos(self):
+        return sum(venda["quantidade"] for venda in self.dados)
     def qtd_prod_vendidos_nome(self):
         totais = {}
         for venda in self.dados:
@@ -40,7 +42,7 @@ class VendaProd:
             qtd= venda["quantidade"]
             margem = venda["margem"]
             lucro_obtido+= margem * qtd
-        return(f"{lucro_obtido:.2f}")
+        return(lucro_obtido)
     def produto_mais_vendido_nome(self):
         totais3 = {}
         for venda in self.dados:

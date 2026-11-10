@@ -1,4 +1,4 @@
-Última atualização: 2026-11-10 16:37:25
+Última atualização: 2026-11-10 16:39:11
 ANÁLISE DE VENDAS 
 1. DADOS DAS VENDAS 
 |Id_Venda   |Id_Produto  |Vendedor             |Distrito           |Nome Produto       |Tipo          |Pais Origem   |Quantidade  |Preco Unitario   |Margem | 

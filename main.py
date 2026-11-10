@@ -12,9 +12,6 @@ vendas=ler_vendas()
 dados = juntar_dados(produtos,vendas)
 analise = VendaProd(dados)
 print(
-    print(produtos),
-    print(vendas),
-    print(dados),
     analise.apresentar(),
     analise.calcular_vendas(),
     analise.qtd_total_produtos(),

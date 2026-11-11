@@ -1,15 +1,56 @@
 from Leitura import *
 
 class VendaProd:
+    '''
+    Calcula os indicadores de desempenho a partir das vendas.
+
+    Attributes:
+        dados (list): lista de dicionários com cada venda já associada
+            ao respetivo produto (resultado de juntar_dados()).
+    '''
     def __init__(self, dados):
+        '''
+        Guarda a lista de vendas no objeto.
+
+        Args:
+            dados (list): vendas completas, devolvidas por juntar_dados().
+        '''
         self.dados = dados
     def apresentar(self):
+        '''
+        Mostra no terminal a lista completa de vendas.
+
+        Método de apoio usado para testar e confirmar que os dados
+        foram lidos e associados corretamente aos produtos. Imprime
+        a lista de dicionários guardada em self.dados.
+
+        Returns:
+            None: apenas imprime, não devolve valor.
+        '''
         print(self.dados)
     def calcular_vendas(self):
+        '''
+        Conta o número de vendas registadas.
+
+        Returns:
+            int: número de vendas.
+        '''
         return len(self.dados)
     def qtd_total_produtos(self):
+        '''
+        Soma a quantidade de todas as vendas.
+
+        Returns:
+            int: quantidade total de produtos vendidos.
+        '''
         return sum(venda["quantidade"] for venda in self.dados)
     def qtd_prod_vendidos_nome(self):
+        '''
+        Soma as quantidades vendidas por nome de produto.
+
+        Returns:
+            dict: {nome_produto: quantidade_total}
+        '''
         totais = {}
         for venda in self.dados:
             nome_produto = venda["nome_produto"]
@@ -20,16 +61,28 @@ class VendaProd:
                 totais[nome_produto]=qtd
         return(totais)
     def qtd_prod_vendidos_tipo(self):
-            totais2 = {}
-            for venda in self.dados:
-                tipo = venda["tipo"]
-                qtd= venda["quantidade"]
-                if tipo in totais2:
-                    totais2[tipo]+=qtd
-                else:
-                    totais2[tipo]=qtd
-            return(totais2)
+        '''
+        Soma as quantidades vendidas por tipo de produto.
+        
+        Returns:
+            dict: {tipo: quantidade_total}
+        '''    
+        totais2 = {}
+        for venda in self.dados:
+            tipo = venda["tipo"]
+            qtd= venda["quantidade"]
+            if tipo in totais2:
+                totais2[tipo]+=qtd
+            else:
+                totais2[tipo]=qtd
+        return(totais2)
     def total_faturacao(self):
+        '''
+        Calcula a faturação total (preço unitário x quantidade).
+
+        Returns:
+            float: faturação total.
+        '''
         total_faturacao=0
         for venda in self.dados:
            qtd= venda["quantidade"]
@@ -37,6 +90,12 @@ class VendaProd:
            total_faturacao += qtd * preco_uni
         return(total_faturacao)
     def lucro_obtido(self):
+        """
+        Calcula o lucro total (margem x quantidade).
+
+        Returns:
+            float: lucro total formatado com 2 casas decimais.
+        """
         lucro_obtido=0
         for venda in self.dados:
             qtd= venda["quantidade"]
@@ -44,6 +103,12 @@ class VendaProd:
             lucro_obtido+= margem * qtd
         return(lucro_obtido)
     def produto_mais_vendido_nome(self):
+        '''
+        Encontra o produto com maior quantidade vendida.
+
+        Returns:
+            tuple: (nome_do_produto, quantidade_total)
+        '''
         totais3 = {}
         for venda in self.dados:
             nome_produto = venda["nome_produto"]
@@ -55,6 +120,12 @@ class VendaProd:
         maximo_venda_nome= max(totais3, key=totais3.get)
         return(maximo_venda_nome,totais3[maximo_venda_nome])
     def produto_mais_vendido_tipo(self):
+        '''
+        Encontra o tipo de produto com maior quantidade vendida.
+        
+        Returns:
+            tuple: (tipo, quantidade_total)
+        '''
         totais4 = {}
         for venda in self.dados:
             tipo = venda["tipo"]
@@ -66,6 +137,15 @@ class VendaProd:
         maximo_venda_tipo= max(totais4, key=totais4.get)
         return(maximo_venda_tipo,totais4[maximo_venda_tipo])
     def vendedor_maior_faturacao(self):
+        '''
+        Encontra o vendedor com maior faturação.
+
+        Soma preço unitário x quantidade de cada vendedor e escolhe
+        o valor mais alto.
+
+        Returns:
+            tuple: (nome_do_vendedor, faturacao_total)
+        '''
         total_faturacao= {}
         for venda in self.dados:
             qtd= venda["quantidade"]
